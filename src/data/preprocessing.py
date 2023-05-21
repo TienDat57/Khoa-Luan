@@ -1,7 +1,5 @@
-from xml.dom import minidom
 import pandas as pd
-
-# get home path contain all Khoa-luan files
+from xml.dom import minidom
 
 PATH_DATA = '../../dataset/'
 
@@ -9,33 +7,50 @@ PATH_DATA = '../../dataset/'
 class Preprocessing:
    def __init__(self, file_name):
       self.file_name = file_name
-      self.data = None
-      self.output_data = PATH_DATA + 'interim/' + file_name
+      self.data_arg = None
+      self.data_role = None
+      self.output_data = PATH_DATA + 'interim/' + file_name.split('.')[0] + '.csv'
       
    def read_xml_file(self):
       # parse an xml file by name
       mydoc = minidom.parse(PATH_DATA + 'raw/' + self.file_name)
-
-      # DOM predicates
-      predicate = mydoc.getElementsByTagName('predicate')
-      predicate = [predicate[i].attributes['lemma'].value for i in range(len(predicate))]
-
-      # get all the roleset in the xml file
-      roleset = mydoc.getElementsByTagName('roles')
-      roleset = [roleset[i].getElementsByTagName('role') for i in range(len(roleset))]
-      roleset = [[roleset[i][j].attributes['descr'].value for j in range(len(roleset[i]))] for i in range(len(roleset))]
       
-      # get all the examples in the xml file
-      example = mydoc.getElementsByTagName('example')
-      text = [example[i].getElementsByTagName('text')[0].firstChild.data for i in range(len(example))]
-      example = [example[i].getElementsByTagName('arg') for i in range(len(example))]
-      example = [[example[i][j].firstChild.data for j in range(len(example[i]))] for i in range(len(example))]
+      # Get the examples from the XML
+      examples = mydoc.getElementsByTagName('example')
       
-      self.data = pd.DataFrame({'predicate': predicate, 'roleset': roleset, 'text': text, 'example': example})
-      return self.data
+      # Create empty lists to store the data
+      ids = [i for i in range(len(examples))]
+      srcs = []
+      texts = []
+      arg0s = []
+      arg1s = []
       
+      # Iterate over each example and extract the required information
+      for example in examples:
+         text = example.getElementsByTagName('text')[0].firstChild.nodeValue
+         src = example.getAttribute('src')
+         arg0 = example.getElementsByTagName('arg')[0].firstChild.nodeValue
+         arg1 = example.getElementsByTagName('arg')[1].firstChild.nodeValue
+         
+         # Append the extracted data to the respective lists
+         texts.append(text)
+         srcs.append(src)
+         arg0s.append(arg0)
+         arg1s.append(arg1)
+      
+      # Create the data frame
+      data_arg = pd.DataFrame({
+         'id': ids,
+         'src': srcs,
+         'text': texts,
+         'arg0': arg0s,
+         'arg1': arg1s
+      })
+      
+      self.data_arg = data_arg
 
-# test
-pre = Preprocessing('abolish_full.xml')
-data = pre.read_xml_file()
-print(data.head())
+
+preprocessor = Preprocessing('abolish_full.xml')
+preprocessor.read_xml_file()
+data_arg = preprocessor.data_arg
+data_arg.to_csv(preprocessor.output_data, index=False)
