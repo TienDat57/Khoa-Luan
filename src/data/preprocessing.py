@@ -35,7 +35,7 @@ class Preprocessing:
          # print(arg_temp)
          for arg in example.getElementsByTagName('arg'):
             # arg_temp.append(arg.firstChild.nodeValue)
-            arg_temp[int(arg.getAttribute('n')) - 1] = arg.firstChild.nodeValue
+            arg_temp.update({arg.getAttribute('n'): arg.firstChild.nodeValue})
          texts.append(text)
          srcs.append(src)
          args.append(arg_temp)
