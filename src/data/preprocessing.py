@@ -18,7 +18,7 @@ class Preprocessing:
       self.output_data = PATH_DATA + 'interim/' + file_name.split('.')[0] + '.csv'
       
    def read_xml_file(self):
-      mydoc = minidom.parse(PATH_DATA + 'raw/alter_full.xml' )
+      mydoc = minidom.parse(PATH_DATA + 'raw/' + self.file_name)
       self.predicate = mydoc.getElementsByTagName('predicate')[0].getAttribute('lemma')
       self.roles = dict()
       for arg in mydoc.getElementsByTagName('role'):
@@ -45,7 +45,6 @@ class Preprocessing:
       self.data_arg = data_arg
 
    def __remove_argument__(self, index_role):
-      print(index_role)
       if index_role < 0 or index_role >= len(self.roles):
          return
       for i in range(len(self.data_arg['arguments'])):
@@ -80,17 +79,11 @@ class Preprocessing:
       for index in sorted(lst_index_remove, reverse=True):
          self.__remove_argument__(index)
 
-# filenames = os.listdir(PATH_DATA + 'raw')
-# for filename in filenames:
-#    print(filename)
-#    preprocessor = Preprocessing(filename)
-#    preprocessor.read_xml_file()
-#    data_arg = preprocessor.data_arg
-#    preprocessor.dependency_parsing()
-#    data_arg.to_csv(preprocessor.output_data, index=False)
-
-preprocessor = Preprocessing('alter_full.xml')
-preprocessor.read_xml_file()
-data_arg = preprocessor.data_arg
-preprocessor.dependency_parsing()
-data_arg.to_csv(preprocessor.output_data, index=False)
+filenames = os.listdir(PATH_DATA + 'raw')
+for filename in filenames:
+   print(filename)
+   preprocessor = Preprocessing(filename)
+   preprocessor.read_xml_file()
+   data_arg = preprocessor.data_arg
+   preprocessor.dependency_parsing()
+   data_arg.to_csv(preprocessor.output_data, index=False)
