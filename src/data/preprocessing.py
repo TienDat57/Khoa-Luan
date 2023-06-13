@@ -67,7 +67,7 @@ class Preprocessing:
             for j in range(len(self.data_arg['arguments'][i])):
                if token.text in list(self.data_arg['arguments'][i].items())[j][1] and token.head.text == root.text:
                   count_examples[dependencies.index(token.dep_)] += 1
-
+      
       data_role_temp = []
       for i in range(len(args)):
          for j in range(len(dependencies)):
