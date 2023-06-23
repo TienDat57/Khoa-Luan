@@ -18,6 +18,7 @@ def main():
     for transformName, transformFn in transformParams.transformFnMap.items():
         transformParameters = transformParams.transformParamsMap[transformName]
         dataDir = transformParams.readDirMap[transformName]
+        print("tien dat", dataDir)
         assert os.path.exists(dataDir), "{} doesnt exist".format(dataDir)
         saveDir = transformParams.saveDirMap[transformName]
         if not os.path.exists(saveDir):

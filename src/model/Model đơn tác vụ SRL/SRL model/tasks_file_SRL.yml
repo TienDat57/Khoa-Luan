@@ -2,7 +2,7 @@ conllsrl:
   model_type: BERT
   config_name: bert-base-uncased
   dropout_prob: 0.2
-  label_map_or_file: /content/data/ner_coNLL_train_label_map.joblib
+  label_map_or_file: content/data/ner_coNLL_train_label_map.joblib
   metrics:
   - seqeval_f1_score
   - seqeval_precision

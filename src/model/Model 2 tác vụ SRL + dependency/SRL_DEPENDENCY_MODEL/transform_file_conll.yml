@@ -62,7 +62,8 @@ transform1:
     - coNLL_testb_translate.txt
     - coNLL_testa_truncate.txt
     - coNLL_testb_truncate.txt
-  read_dir: /content/examples/ner_pos_tagging/coNLL_data
+  # read_dir: /content/examples/ner_pos_tagging/coNLL_data
+  read_dir: /coNLL_data
   save_dir: /content/data
 
 transform2:
@@ -72,7 +73,7 @@ transform2:
     - coNLL_testa1.txt
     - coNLL_testb1.txt
     - coNLL_testb1_dummy.txt
-  read_dir: /content/examples/ner_pos_tagging/coNLL_data
+  read_dir: /coNLL_data
   save_dir: /content/data
 
 transform3:
@@ -82,5 +83,5 @@ transform3:
     - coNLL_testa2.txt
     - coNLL_testb2.txt
     - coNLL_testb2_dummy.txt
-  read_dir: /content/examples/ner_pos_tagging/coNLL_data
+  read_dir: /coNLL_data
   save_dir: /content/data
