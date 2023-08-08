@@ -69,6 +69,8 @@ class PROBINGEval(object):
             for ii in range(0, len(self.task_data[key]['y']), bsize):
                 batch = self.task_data[key]['X'][ii:ii + bsize]
                 embeddings = batcher(params, batch)
+                logging.debug('Computed embeddings for %d/%d' % (ii, len(self.task_data[key]['X'])))
+                print(embeddings.shape)
                 task_embed[key]['X'].append(embeddings)
             task_embed[key]['X'] = np.vstack(task_embed[key]['X'])
             task_embed[key]['y'] = np.array(self.task_data[key]['y'])

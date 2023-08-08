@@ -598,6 +598,7 @@ def main():
                 if args.save_per_updates > 0 and  ( (model.globalStep+1) % args.save_per_updates)==0 and (model.accumulatedStep+1==args.grad_accumulation_steps):
                     savePath = os.path.join(args.out_dir, 'multi_task_model_{}_{}.pt'.format(epoch,
                                                                                             model.globalStep))
+                    print("Tien Dat hello")
                     model.save_multi_task_model(savePath)
 
                     # limiting the checkpoints save, remove checkpoints if beyond limit

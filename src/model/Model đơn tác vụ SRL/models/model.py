@@ -75,6 +75,8 @@ class multiTaskNetwork(nn.Module):
         shared model forward
         '''
         poolerLayer = nn.Linear(self.hiddenSize, self.hiddenSize)
+        print('Dat' + str(self.hiddenSize))
+        print('Dat' + str(poolerLayer))
         return poolerLayer
 
     def forward(self, tokenIds, typeIds, attentionMasks, taskId, taskName):
