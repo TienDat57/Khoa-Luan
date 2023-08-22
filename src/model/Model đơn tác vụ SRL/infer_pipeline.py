@@ -34,11 +34,9 @@ class inferPipeline:
     """
 
     def __init__(self, modelPath, maxSeqLen = 128):
-
         device = torch.device('cpu')
         if torch.cuda.is_available():
             device = torch.device('cuda')
-
         self.maxSeqLen = maxSeqLen
         self.modelPath = modelPath
         assert os.path.exists(self.modelPath), "saved model not present at {}".format(self.modelPath)

@@ -1,2 +1,4 @@
 dataset/
 __pycache__/
+srl_data/
+srl_output/

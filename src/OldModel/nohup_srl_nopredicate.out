@@ -1,0 +1,285 @@
+2023-08-21 13:33:19.369227: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'cudart64_100.dll'; dlerror: cudart64_100.dll not found
+2023-08-21 13:33:19.369259: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+WARNING:tensorflow:From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\optimization.py:87: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+run_srl.py:718: UserWarning: Flag --task_name has a non-None default value; therefore, mark_flag_as_required will pass even if flag is not specified in the command line!
+  flags.mark_flag_as_required("task_name")
+WARNING:tensorflow:From run_srl.py:722: The name tf.app.run is deprecated. Please use tf.compat.v1.app.run instead.
+
+WARNING:tensorflow:From run_srl.py:530: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+W0821 13:33:20.236996 35444 module_wrapper.py:139] From run_srl.py:530: The name tf.logging.set_verbosity is deprecated. Please use tf.compat.v1.logging.set_verbosity instead.
+
+WARNING:tensorflow:From run_srl.py:530: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+W0821 13:33:20.236996 35444 module_wrapper.py:139] From run_srl.py:530: The name tf.logging.INFO is deprecated. Please use tf.compat.v1.logging.INFO instead.
+
+WARNING:tensorflow:From run_srl.py:546: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+W0821 13:33:20.236996 35444 module_wrapper.py:139] From run_srl.py:546: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+WARNING:tensorflow:From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\tokenization.py:125: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+W0821 13:33:20.237996 35444 module_wrapper.py:139] From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\tokenization.py:125: The name tf.gfile.GFile is deprecated. Please use tf.io.gfile.GFile instead.
+
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+W0821 13:33:20.272386 35444 lazy_loader.py:50] 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x0000013AC717DBF8>) includes params argument, but params are not passed to Estimator.
+W0821 13:33:20.638688 35444 estimator.py:1994] Estimator's model_fn (<function model_fn_builder.<locals>.model_fn at 0x0000013AC717DBF8>) includes params argument, but params are not passed to Estimator.
+INFO:tensorflow:Using config: {'_model_dir': './srl_output', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 1000, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000013AC7210A58>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+I0821 13:33:20.638688 35444 estimator.py:212] Using config: {'_model_dir': './srl_output', '_tf_random_seed': None, '_save_summary_steps': 100, '_save_checkpoints_steps': 1000, '_save_checkpoints_secs': None, '_session_config': allow_soft_placement: true
+graph_options {
+  rewrite_options {
+    meta_optimizer_iterations: ONE
+  }
+}
+, '_keep_checkpoint_max': 5, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': None, '_train_distribute': None, '_device_fn': None, '_protocol': None, '_eval_distribute': None, '_experimental_distribute': None, '_experimental_max_worker_delay_secs': None, '_session_creation_timeout_secs': 7200, '_service': None, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000013AC7210A58>, '_task_type': 'worker', '_task_id': 0, '_global_id_in_cluster': 0, '_master': '', '_evaluation_master': '', '_is_chief': True, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_tpu_config': TPUConfig(iterations_per_loop=1000, num_shards=8, num_cores_per_replica=None, per_host_input_for_training=3, tpu_job_name=None, initial_infeed_sleep_secs=None, input_partition_dims=None, eval_training_input_configuration=2, experimental_host_call_every_n_steps=1), '_cluster': None}
+INFO:tensorflow:_TPUContext: eval_on_tpu True
+I0821 13:33:20.639688 35444 tpu_context.py:220] _TPUContext: eval_on_tpu True
+WARNING:tensorflow:eval_on_tpu ignored because use_tpu is False.
+W0821 13:33:20.639688 35444 tpu_context.py:222] eval_on_tpu ignored because use_tpu is False.
+WARNING:tensorflow:From run_srl.py:357: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+W0821 13:33:20.639688 35444 module_wrapper.py:139] From run_srl.py:357: The name tf.python_io.TFRecordWriter is deprecated. Please use tf.io.TFRecordWriter instead.
+
+WARNING:tensorflow:From run_srl.py:360: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+W0821 13:33:20.639688 35444 module_wrapper.py:139] From run_srl.py:360: The name tf.logging.info is deprecated. Please use tf.compat.v1.logging.info instead.
+
+INFO:tensorflow:Writing example 0 of 2220
+I0821 13:33:20.639688 35444 run_srl.py:360] Writing example 0 of 2220
+INFO:tensorflow:*** Example ***
+I0821 13:33:20.640686 35444 run_srl.py:334] *** Example ***
+INFO:tensorflow:guid: train-0
+I0821 13:33:20.640686 35444 run_srl.py:335] guid: train-0
+INFO:tensorflow:tokens: a g - to - a transition at the first n ##uc ##leo ##tide of intro ##n 2 of patient 1 abolished normal s ##p ##licing .
+I0821 13:33:20.640686 35444 run_srl.py:337] tokens: a g - to - a transition at the first n ##uc ##leo ##tide of intro ##n 2 of patient 1 abolished normal s ##p ##licing .
+INFO:tensorflow:input_ids: 101 170 176 118 1106 118 170 6468 1120 1103 1148 183 21977 26918 23767 1104 27553 1179 123 1104 5351 122 8632 2999 188 1643 22548 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.640686 35444 run_srl.py:338] input_ids: 101 170 176 118 1106 118 170 6468 1120 1103 1148 183 21977 26918 23767 1104 27553 1179 123 1104 5351 122 8632 2999 188 1643 22548 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.640686 35444 run_srl.py:339] input_mask: 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.640686 35444 run_srl.py:340] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label_ids: 20 4 11 11 11 11 11 11 11 11 11 11 1 1 1 11 11 1 11 5 5 5 18 10 19 1 1 5 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.640686 35444 run_srl.py:341] label_ids: 20 4 11 11 11 11 11 11 11 11 11 11 1 1 1 11 11 1 11 5 5 5 18 10 19 1 1 5 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:*** Example ***
+I0821 13:33:20.641688 35444 run_srl.py:334] *** Example ***
+INFO:tensorflow:guid: train-1
+I0821 13:33:20.641688 35444 run_srl.py:335] guid: train-1
+INFO:tensorflow:tokens: al ##p activity was abolished by insertion ##s which interrupt this open reading frame .
+I0821 13:33:20.641688 35444 run_srl.py:337] tokens: al ##p activity was abolished by insertion ##s which interrupt this open reading frame .
+INFO:tensorflow:input_ids: 101 2393 1643 3246 1108 8632 1118 27914 1116 1134 19717 1142 1501 3455 4207 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.641688 35444 run_srl.py:338] input_ids: 101 2393 1643 3246 1108 8632 1118 27914 1116 1134 19717 1142 1501 3455 4207 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.641688 35444 run_srl.py:339] input_mask: 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.641688 35444 run_srl.py:340] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label_ids: 20 10 1 19 5 18 5 4 1 5 5 5 5 5 5 5 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.641688 35444 run_srl.py:341] label_ids: 20 10 1 19 5 18 5 4 1 5 5 5 5 5 5 5 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:*** Example ***
+I0821 13:33:20.642451 35444 run_srl.py:334] *** Example ***
+INFO:tensorflow:guid: train-2
+I0821 13:33:20.642451 35444 run_srl.py:335] guid: train-2
+INFO:tensorflow:tokens: formation of liver meta ##sta ##ses in mice was abolished by l ##ino ##mi ##de and anti ##body - targeted super ##anti ##gen therapy .
+I0821 13:33:20.642451 35444 run_srl.py:337] tokens: formation of liver meta ##sta ##ses in mice was abolished by l ##ino ##mi ##de and anti ##body - targeted super ##anti ##gen therapy .
+INFO:tensorflow:input_ids: 101 3855 1104 11911 27154 8419 8830 1107 14105 1108 8632 1118 181 4559 3080 2007 1105 2848 14637 118 9271 7688 25711 4915 7606 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.642451 35444 run_srl.py:338] input_ids: 101 3855 1104 11911 27154 8419 8830 1107 14105 1108 8632 1118 181 4559 3080 2007 1105 2848 14637 118 9271 7688 25711 4915 7606 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.642451 35444 run_srl.py:339] input_mask: 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.642451 35444 run_srl.py:340] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label_ids: 20 10 19 19 19 1 1 19 19 5 18 5 4 1 1 1 11 11 1 11 11 11 1 1 11 5 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.642451 35444 run_srl.py:341] label_ids: 20 10 19 19 19 1 1 19 19 5 18 5 4 1 1 1 11 11 1 11 11 11 1 1 11 5 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:*** Example ***
+I0821 13:33:20.643349 35444 run_srl.py:334] *** Example ***
+INFO:tensorflow:guid: train-3
+I0821 13:33:20.643349 35444 run_srl.py:335] guid: train-3
+INFO:tensorflow:tokens: g ##rouch ##o binding is abolished by m ##uta ##ting a conserved p ##hen ##yla ##lani ##ne of the eh ##1 / g ##eh sequence to g ##lut ##ami ##c acid ( ji ##m ##ne ##z et al @ , 1999 ) .
+I0821 13:33:20.643349 35444 run_srl.py:337] tokens: g ##rouch ##o binding is abolished by m ##uta ##ting a conserved p ##hen ##yla ##lani ##ne of the eh ##1 / g ##eh sequence to g ##lut ##ami ##c acid ( ji ##m ##ne ##z et al @ , 1999 ) .
+INFO:tensorflow:input_ids: 101 176 22454 1186 7861 1110 8632 1118 182 15012 1916 170 21996 185 10436 22948 21690 1673 1104 1103 19563 1475 120 176 10486 4954 1106 176 25937 11787 1665 5190 113 23220 1306 1673 1584 3084 2393 137 117 1729 114 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.643349 35444 run_srl.py:338] input_ids: 101 176 22454 1186 7861 1110 8632 1118 182 15012 1916 170 21996 185 10436 22948 21690 1673 1104 1103 19563 1475 120 176 10486 4954 1106 176 25937 11787 1665 5190 113 23220 1306 1673 1584 3084 2393 137 117 1729 114 119 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:input_mask: 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.643349 35444 run_srl.py:339] input_mask: 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.643349 35444 run_srl.py:340] segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:label_ids: 20 10 1 1 19 5 18 5 4 1 1 11 11 11 1 1 1 1 11 11 11 1 11 11 1 11 11 11 1 1 1 11 5 5 1 1 1 5 5 5 5 5 5 5 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+I0821 13:33:20.643349 35444 run_srl.py:341] label_ids: 20 10 1 1 19 5 18 5 4 1 1 11 11 11 1 1 1 1 11 11 11 1 11 11 1 11 11 11 1 1 1 11 5 5 1 1 1 5 5 5 5 5 5 5 21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+INFO:tensorflow:***** Running training *****
+I0821 13:33:22.113326 35444 run_srl.py:606] ***** Running training *****
+INFO:tensorflow:  Num examples = 2220
+I0821 13:33:22.113326 35444 run_srl.py:607]   Num examples = 2220
+INFO:tensorflow:  Batch size = 8
+I0821 13:33:22.113326 35444 run_srl.py:608]   Batch size = 8
+INFO:tensorflow:  Num steps = 2775
+I0821 13:33:22.113326 35444 run_srl.py:609]   Num steps = 2775
+WARNING:tensorflow:From run_srl.py:378: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+W0821 13:33:22.113326 35444 module_wrapper.py:139] From run_srl.py:378: The name tf.FixedLenFeature is deprecated. Please use tf.io.FixedLenFeature instead.
+
+WARNING:tensorflow:From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0821 13:33:22.117341 35444 deprecation.py:506] From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\ops\resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+WARNING:tensorflow:From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0821 13:33:22.117341 35444 deprecation.py:323] From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\training\training_util.py:236: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From run_srl.py:404: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+W0821 13:33:22.130848 35444 deprecation.py:323] From run_srl.py:404: map_and_batch (from tensorflow.contrib.data.python.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.experimental.map_and_batch(...)`.
+WARNING:tensorflow:From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+W0821 13:33:22.131848 35444 deprecation.py:323] From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\contrib\data\python\ops\batching.py:276: map_and_batch (from tensorflow.python.data.experimental.ops.batching) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.Dataset.map(map_func, num_parallel_calls)` followed by `tf.data.Dataset.batch(batch_size, drop_remainder)`. Static tf.data optimizations will take care of using the fused implementation.
+WARNING:tensorflow:From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+W0821 13:33:22.170877 35444 module_wrapper.py:139] From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\autograph\converters\directives.py:119: The name tf.parse_single_example is deprecated. Please use tf.io.parse_single_example instead.
+
+WARNING:tensorflow:From run_srl.py:391: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+W0821 13:33:22.220971 35444 deprecation.py:323] From run_srl.py:391: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+INFO:tensorflow:Calling model_fn.
+I0821 13:33:22.227476 35444 estimator.py:1148] Calling model_fn.
+INFO:tensorflow:Running train on CPU
+I0821 13:33:22.228480 35444 tpu_estimator.py:3124] Running train on CPU
+INFO:tensorflow:*** Features ***
+I0821 13:33:22.228480 35444 run_srl.py:456] *** Features ***
+INFO:tensorflow:  name = input_ids, shape = (8, 128)
+I0821 13:33:22.228480 35444 run_srl.py:458]   name = input_ids, shape = (8, 128)
+INFO:tensorflow:  name = input_mask, shape = (8, 128)
+I0821 13:33:22.228480 35444 run_srl.py:458]   name = input_mask, shape = (8, 128)
+INFO:tensorflow:  name = label_ids, shape = (8, 128)
+I0821 13:33:22.229476 35444 run_srl.py:458]   name = label_ids, shape = (8, 128)
+INFO:tensorflow:  name = segment_ids, shape = (8, 128)
+I0821 13:33:22.229476 35444 run_srl.py:458]   name = segment_ids, shape = (8, 128)
+WARNING:tensorflow:From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:175: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W0821 13:33:22.229476 35444 module_wrapper.py:139] From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:175: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:414: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+W0821 13:33:22.230476 35444 module_wrapper.py:139] From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:414: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:496: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+W0821 13:33:22.238981 35444 module_wrapper.py:139] From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:496: The name tf.assert_less_equal is deprecated. Please use tf.compat.v1.assert_less_equal instead.
+
+WARNING:tensorflow:From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:362: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+W0821 13:33:22.252498 35444 deprecation.py:506] From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:362: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:678: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+W0821 13:33:22.260006 35444 deprecation.py:323] From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:678: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.Dense instead.
+WARNING:tensorflow:From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+W0821 13:33:22.260006 35444 deprecation.py:323] From C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\layers\core.py:187: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:280: The name tf.erf is deprecated. Please use tf.math.erf instead.
+
+W0821 13:33:22.311986 35444 module_wrapper.py:139] From D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py:280: The name tf.erf is deprecated. Please use tf.math.erf instead.
+
+WARNING:tensorflow:From run_srl.py:470: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+W0821 13:33:23.144356 35444 module_wrapper.py:139] From run_srl.py:470: The name tf.trainable_variables is deprecated. Please use tf.compat.v1.trainable_variables instead.
+
+2023-08-21 13:33:23.148297: W tensorflow/core/util/tensor_slice_reader.cc:95] Could not open .\biobert_v1\model.ckpt-1000000: Data loss: not an sstable (bad magic number): perhaps your file is in a different file format and you need to use a different restore operator?
+ERROR:tensorflow:Error recorded from training_loop: Unable to open table file .\biobert_v1\model.ckpt-1000000: Data loss: not an sstable (bad magic number): perhaps your file is in a different file format and you need to use a different restore operator?
+E0821 13:33:23.148357 35444 error_handling.py:75] Error recorded from training_loop: Unable to open table file .\biobert_v1\model.ckpt-1000000: Data loss: not an sstable (bad magic number): perhaps your file is in a different file format and you need to use a different restore operator?
+INFO:tensorflow:training_loop marked as finished
+I0821 13:33:23.148357 35444 error_handling.py:101] training_loop marked as finished
+WARNING:tensorflow:Reraising captured error
+W0821 13:33:23.148357 35444 error_handling.py:135] Reraising captured error
+========================================================
+
+ scope: None
+========================================================
+
+ use_position_embeddings
+Traceback (most recent call last):
+  File "run_srl.py", line 722, in <module>
+    tf.app.run()
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\platform\app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\absl\app.py", line 312, in run
+    _run_main(main, args)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\absl\app.py", line 258, in _run_main
+    sys.exit(main(argv))
+  File "run_srl.py", line 615, in main
+    estimator.train(input_fn=train_input_fn, max_steps=num_train_steps)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\tpu\tpu_estimator.py", line 3035, in train
+    rendezvous.raise_errors()
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\tpu\error_handling.py", line 136, in raise_errors
+    six.reraise(typ, value, traceback)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\six.py", line 719, in reraise
+    raise value
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\tpu\tpu_estimator.py", line 3030, in train
+    saving_listeners=saving_listeners)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py", line 370, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py", line 1161, in _train_model
+    return self._train_model_default(input_fn, hooks, saving_listeners)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py", line 1191, in _train_model_default
+    features, labels, ModeKeys.TRAIN, self.config)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\tpu\tpu_estimator.py", line 2857, in _call_model_fn
+    config)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py", line 1149, in _call_model_fn
+    model_fn_results = self._model_fn(features=features, **kwargs)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\tpu\tpu_estimator.py", line 3126, in _model_fn
+    features, labels, is_export_mode=is_export_mode)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\tpu\tpu_estimator.py", line 1663, in call_without_tpu
+    return self._call_model_fn(features, labels, is_export_mode=is_export_mode)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_estimator\python\estimator\tpu\tpu_estimator.py", line 1994, in _call_model_fn
+    estimator_spec = self._model_fn(features=features, **kwargs)
+  File "run_srl.py", line 473, in model_fn
+    (assignment_map, initialized_variable_names) = modeling.get_assignment_map_from_checkpoint(tvars,init_checkpoint)
+  File "D:\FORME\Khoa-Luan\src\OldModel\biobert_v1\modeling.py", line 334, in get_assignment_map_from_checkpoint
+    init_vars = tf.train.list_variables(init_checkpoint)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\training\checkpoint_utils.py", line 97, in list_variables
+    reader = load_checkpoint(ckpt_dir_or_file)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\training\checkpoint_utils.py", line 66, in load_checkpoint
+    return pywrap_tensorflow.NewCheckpointReader(filename)
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\pywrap_tensorflow_internal.py", line 873, in NewCheckpointReader
+    return CheckpointReader(compat.as_bytes(filepattern))
+  File "C:\Users\ADMIN\anaconda3\envs\biosyntax\lib\site-packages\tensorflow_core\python\pywrap_tensorflow_internal.py", line 885, in __init__
+    this = _pywrap_tensorflow_internal.new_CheckpointReader(filename)
+tensorflow.python.framework.errors_impl.DataLossError: Unable to open table file .\biobert_v1\model.ckpt-1000000: Data loss: not an sstable (bad magic number): perhaps your file is in a different file format and you need to use a different restore operator?

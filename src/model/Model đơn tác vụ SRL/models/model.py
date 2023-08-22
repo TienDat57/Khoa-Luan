@@ -75,8 +75,15 @@ class multiTaskNetwork(nn.Module):
         shared model forward
         '''
         poolerLayer = nn.Linear(self.hiddenSize, self.hiddenSize)
-        print('Dat' + str(self.hiddenSize))
-        print('Dat' + str(poolerLayer))
+        # get word embeddings from hidden state of first layer
+        print('size layers of shared model: ', len(self.sharedModel.encoder.layer))
+        first_layer = self.sharedModel.encoder.layer[0]
+        print('first layer: ', first_layer)
+        # get word embeddings from hidden state of first layer
+        first_layer_embeddings = first_layer.attention.self.query.weight.data
+        print('size of first layer embeddings: ', first_layer_embeddings.size())
+        # print 10 words from first layer embeddings 
+        print('first 10 words from first layer embeddings: ', first_layer_embeddings[:10])
         return poolerLayer
 
     def forward(self, tokenIds, typeIds, attentionMasks, taskId, taskName):
@@ -147,7 +154,6 @@ class multiTaskModel:
         else:
             self.network = multiTaskNetwork(params)
             logger.info('Using single GPU')
-
         # transfering to gpu if available
         if self.params['gpu']:
             self.network.cuda()
